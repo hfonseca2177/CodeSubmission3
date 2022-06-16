@@ -1,0 +1,14 @@
+H:\PRO\CodeSubmission3\CodeSubmission3\bin\Debug\netcoreapp3.1\CodeSubmission3.exe
+H:\PRO\CodeSubmission3\CodeSubmission3\bin\Debug\netcoreapp3.1\CodeSubmission3.deps.json
+H:\PRO\CodeSubmission3\CodeSubmission3\bin\Debug\netcoreapp3.1\CodeSubmission3.runtimeconfig.json
+H:\PRO\CodeSubmission3\CodeSubmission3\bin\Debug\netcoreapp3.1\CodeSubmission3.runtimeconfig.dev.json
+H:\PRO\CodeSubmission3\CodeSubmission3\bin\Debug\netcoreapp3.1\CodeSubmission3.dll
+H:\PRO\CodeSubmission3\CodeSubmission3\bin\Debug\netcoreapp3.1\CodeSubmission3.pdb
+H:\PRO\CodeSubmission3\CodeSubmission3\obj\Debug\netcoreapp3.1\CodeSubmission3.csproj.AssemblyReference.cache
+H:\PRO\CodeSubmission3\CodeSubmission3\obj\Debug\netcoreapp3.1\CodeSubmission3.GeneratedMSBuildEditorConfig.editorconfig
+H:\PRO\CodeSubmission3\CodeSubmission3\obj\Debug\netcoreapp3.1\CodeSubmission3.AssemblyInfoInputs.cache
+H:\PRO\CodeSubmission3\CodeSubmission3\obj\Debug\netcoreapp3.1\CodeSubmission3.AssemblyInfo.cs
+H:\PRO\CodeSubmission3\CodeSubmission3\obj\Debug\netcoreapp3.1\CodeSubmission3.csproj.CoreCompileInputs.cache
+H:\PRO\CodeSubmission3\CodeSubmission3\obj\Debug\netcoreapp3.1\CodeSubmission3.dll
+H:\PRO\CodeSubmission3\CodeSubmission3\obj\Debug\netcoreapp3.1\CodeSubmission3.pdb
+H:\PRO\CodeSubmission3\CodeSubmission3\obj\Debug\netcoreapp3.1\CodeSubmission3.genruntimeconfig.cache

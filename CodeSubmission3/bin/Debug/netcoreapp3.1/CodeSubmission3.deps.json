@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "CodeSubmission3/1.0.0": {
+        "runtime": {
+          "CodeSubmission3.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CodeSubmission3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
