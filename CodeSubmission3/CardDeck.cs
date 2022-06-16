@@ -8,12 +8,13 @@ namespace CodeSubmission3
     {
         private Card[] cards;
         private const int MAX_CARDS_SUIT = 13;
+        private const int MAX_CARDS = 52;
         private int lastCardDrawn = 0;
 
         //Instantiate full deck
         public void InitDeck()
         {
-            cards = new Card[52];
+            cards = new Card[MAX_CARDS];
             InstantiateSuit(Suit.DIAMONDS, 0);
             InstantiateSuit(Suit.CLUBS, 13);
             InstantiateSuit(Suit.HEARTS, 26);
@@ -47,9 +48,18 @@ namespace CodeSubmission3
         //Draws a card from the pile
         public Card Draw()
         {
+            if(DeckIsOver())
+            {
+                throw new Exception("Deck is Over");
+            }
             Card cardDrawn = cards[lastCardDrawn];
             lastCardDrawn++;
             return cardDrawn;
+        }
+        //Return if there is no more cards to draw
+        public bool DeckIsOver()
+        {
+            return lastCardDrawn == (MAX_CARDS-1);
         }
     }
 

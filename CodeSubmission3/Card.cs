@@ -46,6 +46,7 @@ namespace CodeSubmission3
             return cardNumber;
         }
 
+        //Returns the uCode that represents the card Suit
         private string GetSuitUCode()
         {
             string suitUCode;
@@ -80,6 +81,12 @@ namespace CodeSubmission3
         public int Number()
         {
             return number;
+        }
+
+        //Return is this card is an Ace
+        public bool IsAce()
+        {
+            return number == 1;
         }
     }
 }

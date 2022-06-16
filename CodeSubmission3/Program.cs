@@ -14,7 +14,6 @@ namespace CodeSubmission3
         static void Main(string[] args)
         {
             BlackjackManager blackjackManager = new BlackjackManager();
-            blackjackManager.Init();
             blackjackManager.Play();
         }
     }

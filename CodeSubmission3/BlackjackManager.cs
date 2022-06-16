@@ -4,7 +4,8 @@ using Util;
 
 namespace CodeSubmission3
 {
-    //Game manager
+    //Blackjack Game manager
+    //Execute the gameloop, and evaluates the result hands
     internal class BlackjackManager
     {
         List<Card> playerHand;
@@ -14,21 +15,22 @@ namespace CodeSubmission3
         bool gameOn = false;
 
         //Creates deck and 
-        public void Init()
+        private void Init()
         {
             PrintRules();
             this.deck = new CardDeck();
             this.deck.InitDeck();
         }
-
+        //Clean hands collections
         private void ResetHands()
         {
             this.playerHand = new List<Card>();
             this.dealerHand = new List<Card>();
         }
-
+        //Execute the game play loop
         public void Play()
         {
+            Init();
             SubscribeUserChoices();
             while (true)
             {
@@ -51,7 +53,7 @@ namespace CodeSubmission3
             }
             Destroy();
         }
-
+        //Deals initial hand
         private void StartingHand()
         {
             Print("======================================================", ConsoleColor.Green);
@@ -65,30 +67,27 @@ namespace CodeSubmission3
             PrintHand(ref playerHand);
             gameOn = true;
         }
-
-        public void StandChoice()
+        //Keeps hand and see results
+        private void StandChoice()
         {   
-            Print("==================== Final Result ===================", ConsoleColor.Yellow);
-            Print("");
-            PrintHand(ref playerHand);
-            Print("");
+            Print("\n==================== FINAL RESULT ===================\n", ConsoleColor.Magenta);
+            Print("Your Hand: ");
+            PrintHand(ref playerHand);            
+            Print("\nDealer's Hand: ");
             PrintHand(ref dealerHand);
-            Print("");
+            Print("\n=====================================================\n\n", ConsoleColor.Magenta);
             gameOn = false;
-            //TODO process result
-            //Console.ReadKey();
-            Print("=====================================================", ConsoleColor.Yellow);
         }
-
-        public void HitChoice()
+        //Hit - Draws another card
+        private void HitChoice()
         {
             playerHand.Add(this.deck.Draw());
-            Print("Your hand :");
+            Print("\nYour hand :");
             PrintHand(ref playerHand);
-            //TODO evaluate total in hand
         }
 
-        public void ExitGame()
+        //Changes flag to exit loop
+        private void ExitGame()
         {
             gameOver = true;
         }
@@ -110,7 +109,7 @@ namespace CodeSubmission3
             Print("Farewell!!!!", ConsoleColor.Cyan);
         }
 
-
+        //Interact through all cards in hand and print it
         private void PrintHand(ref List<Card> hand)
         {   
             if(hand.Count > 0)
@@ -124,7 +123,7 @@ namespace CodeSubmission3
             Console.WriteLine();
         }
 
-        public void PrintRules()
+        private void PrintRules()
         {
             Print("################ Welcome to Blackjack ################ ", ConsoleColor.Green);
             Print("It is You against the Dealer !!!!");
@@ -139,12 +138,12 @@ namespace CodeSubmission3
             Print("#######################################################", ConsoleColor.Green);
         }
 
-        protected void Print(string message)
+        private void Print(string message)
         {
             Console.WriteLine(message);
         }
 
-        protected void Print(string message, ConsoleColor color)
+        private void Print(string message, ConsoleColor color)
         {
             Console.ForegroundColor = color;
             Print(message);
